@@ -16,11 +16,11 @@
 
      <servlet>
         <servlet-name>Orion-Billing</servlet-name>
-        <servlet-class>com.orion.billing.Start</servlet-class>
+        <servlet-class>com.orion.billing.OrionBillingLogin</servlet-class>
     </servlet>
      <servlet>
         <servlet-name>Orion-Common</servlet-name>
-        <servlet-class>com.orion.common.Start</servlet-class>
+        <servlet-class>com.orion.common.OrionCommonLogin</servlet-class>
     </servlet>
  
     <servlet-mapping>

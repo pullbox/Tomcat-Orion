@@ -20,10 +20,10 @@ import com.orion.shoppingcart.manager.ShoppingCartPropertyManager;
 import com.orion.shoppingcart.workflow.tasks.ShoppingCartTask;
 import com.orion.shoppingcart.workflow.tasks.ShoppingCartTaskExecutor;
 
-public class Start extends HttpServlet {
+public class OrionBillingLogin extends HttpServlet {
 
 	private static final long serialVersionUID = 1L;
-	private static final Logger log = LoggerFactory.getLogger(Start.class);
+	private static final Logger log = LoggerFactory.getLogger(OrionBillingLogin.class);
 
 	@Override
 	public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
@@ -65,12 +65,12 @@ public class Start extends HttpServlet {
         PrintWriter out = response.getWriter();
         out.println("<html>");
         out.println("<head>");
-        out.println("<title>Tomcat-App1 EntryPoint1</title>");
+        out.println("<title>Orion-Billing</title>");
         out.println("</head>");
         out.println("<body>");
-        out.println("<h1>Tomcat-App1 EntryPoint1 - Completed Generating " + noOfErrors + " Errors ....</h1>");
+        out.println("<h1>Orion Billing - Completed Generating " + noOfErrors + " Errors ....</h1>");
         out.println("<br/><br/>");
-        out.println("<p><a href=\"../../index.html\">App1 Home</a></p>");
+        out.println("<p><a href=\"../../index.html\">Orion Home</a></p>");
         out.println("</body>");
         out.println("</html>");
 	}
