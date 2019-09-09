@@ -99,7 +99,7 @@ public class URLConnectionHandler {
 			"import org.slf4j.Logger;\n" + 
 			"import org.slf4j.LoggerFactory;\n" + 
 			"\n" + 
-			"import com.empire.mockdata.generate.utils.RandomUtil;\n" + 
+			"import com.orion.mockdata.generate.utils.RandomUtil;\n" + 
 			"\n" + 
 			"public class " + classname + " {\n" + 
 			"\n" + 

@@ -90,15 +90,32 @@ public class ShippingHandler {
 
     private String getSourceCode(String classname, String shipmentDetails, String shipNumber) {
     	String sourceCode = 
+        	"public class " + classname + " {\n" + 
+			" \n" + 
+
+			"	public void " + METHOD_NAME + "(String customerNumber, String orderNumber, String shipmentDetails, String shipNumber) {	\n" + 
+			"		try {			 \n" + 
+			"			throw new RuntimeException(\"Error in processing customerNumber: \" + customerNumber + \" and orderNumber: \" + orderNumber);\n" + 
+			"		} \n" + 
+			"		catch (Throwable e) { \n" + 
+			"			System.err.println(\"Error in processing customerNumber: \" + customerNumber + \" and orderNumber: \" + orderNumber);\n" + 
+			"		}\n" +
+			"	} \n" + 
+			"}";
+    	return sourceCode;
+    }
+    
+    public String getSourceCode1(String classname, String shipmentDetails, String shipNumber) {
+    	String sourceCode = 
 			"import org.slf4j.Logger;\n" + 
 			"import org.slf4j.LoggerFactory;\n" + 
 			"\n" + 
-			"import com.empire.mockdata.generate.utils.RandomUtil;\n" + 
-			"import com.empire.shoppingcart.domain.Customer;\n" + 
-			"import com.empire.shoppingcart.domain.Order;\n" + 
-			"import com.empire.shoppingcart.manager.CustomerManager;\n" + 
-			"import com.empire.shoppingcart.manager.OrderManager;\n" + 
-			"import com.empire.shoppingcart.util.ExceptionListReader;\n" + 
+			"import com.orion.mockdata.generate.utils.RandomUtil;\n" + 
+			"import com.orion.shoppingcart.domain.Customer;\n" + 
+			"import com.orion.shoppingcart.domain.Order;\n" + 
+			"import com.orion.shoppingcart.manager.CustomerManager;\n" + 
+			"import com.orion.shoppingcart.manager.OrderManager;\n" + 
+			"import com.orion.shoppingcart.util.ExceptionListReader;\n" + 
 			"\n" + 
         	"public class " + classname + " {\n" + 
 			"\n" + 
