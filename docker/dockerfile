@@ -1,0 +1,9 @@
+# Building Dockerfile with Tomcat 9 and deploying the tomcat-orion war file
+FROM tomcat:9.0
+
+MAINTAINER Daniel Bechtel
+
+# COPY path to the war     path to the webapps in docker tomcat
+
+COPY Orion-1.0.war /usr/local/tomcat/webapps/
+
